@@ -1,0 +1,4 @@
+<h1> <%= @task.title %> </h1>
+<% @task.completed ? done = "✅ It is done!" : done = "⭕️ Do it now!" %>
+<h2> <%= @task.details %> </h2>
+<h3> <%= done %> </h3>
