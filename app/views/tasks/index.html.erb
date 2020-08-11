@@ -3,3 +3,5 @@
 <% task.completed ? done = "✅" : done = "⭕️" %>
 <p> <%= done %> <%= link_to task.title, task_path(task) %> </p>
 <% end %>
+
+<p> <%= link_to "+ add a task", new_path %> </p>

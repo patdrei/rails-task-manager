@@ -2,3 +2,9 @@
 <% @task.completed ? done = "✅ It is done!" : done = "⭕️ Do it now!" %>
 <h2> <%= @task.details %> </h2>
 <h3> <%= done %> </h3>
+
+<p> <%= link_to "🖋 edit this task", edit_path(@task) %> </p>
+
+<p> <%= link_to "⚠️ delete this task ⚠️", delete_path(@task) %> </p>
+
+<p> <%= link_to "<-- Back to all Tasks", tasks_path %> </p>
